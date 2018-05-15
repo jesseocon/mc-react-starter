@@ -12,7 +12,7 @@ export default class Routes extends PureComponent {
       <Router>
         <AppView>
           <Switch>
-            {/* <Route exact path='/' component={DashboardView} /> */}
+            <Route exact path='/' component={CoursesView} />
             <Route exact path='/courses' component={CoursesView} />
             <Route exact path='/courses/selected' component={SelectedCoursesView} />
           </Switch>

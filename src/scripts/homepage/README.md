@@ -1,4 +1,11 @@
 ## The Assignment
+* Create the following page: https://www.figma.com/file/KQr5QmLmvKzpOaxp8oEBoXE6/Logged-In-HP
+* Only do the following view: LIHP 2 - This is the first view
+* (Read the readme at:) [https://github.com/jesseocon/mc-react-starter/tree/master/src] . This is how we structure our apps. Use this format to extend the app to have the LIHP 2 view. This should be located at '/' You will have to adjust the router.js file as currently '/' point to the CoursesView
+
+* You will be stubbing all the api calls. Please see how this is done for the courses view and match that format
+* Assume the top half of the view under the heading my classes will be using /api/v2/{userId}/user_courses to retrieve the user_courses and that this will retrieve the last_chapter_number, along with the course information. Assume that the first piece of text under the image comes from the chapter. Assume that you will be making a separate api call to /api/v2/chapters with an array of chapter ids that you aggregate from each last_chapter_id from the previous api call. 
+* Assume that the lower half of the view under the heading Explore Classes will come from /api/v2/users/{userId}/recommended_courses and will return an array of courses in the format show below for courses.
 
 ## UserCourse Description
 The user course is a mapping table between courses and users. Each user course will include the course nested within. For brevity we abbreviate this as an object in the data structure shown below

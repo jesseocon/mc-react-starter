@@ -1,0 +1,36 @@
+{
+  "name": "RedCarpet",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "history": "^4.7.2",
+    "mc-sass-lib": "https://github.com/jesseocon/mc-sass-lib",
+    "node-sass-chokidar": "^1.2.2",
+    "normalizr": "^3.2.4",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.3.2",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o public/",
+    "watch-css": "yarn run build-css --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2"
+  }
+}
